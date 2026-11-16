@@ -60,9 +60,27 @@ This baseline must be refreshed from current source and CI before each major pha
 
 ### Phase 1 — Kernel memory and CPU fault foundation
 
+<badge color="info">In progress</badge>
+
 **Priority:** First implementation phase.
 
 **Owner:** Wicofe-Kernel. **Coordination:** Wicofe-ABI and Wicofe-Tests.
+
+**Verified progress (2026-11-16):** x86-64 page-table mapping now checks
+effective writable/user permissions at all parent levels for 4 KiB and 2 MiB
+leaves (and the PML4 parent for 1 GiB leaves). It rejects insufficient parent
+permissions instead of silently modifying shared entries. The regression
+tests pass in Kernel CI run
+[43889707004](https://github.com/Waizusora/Wicofe-Kernel/actions/runs/43889707004)
+at commit `47b02c939b22b48c189573c470bc2d41b778f65d`. The full run passed
+formatting, 88 workspace tests, x86-64 target check, ELF build/layout
+verification, Limine ISO packaging/license checks, QEMU early-boot/PMM smoke
+test, and AArch64 target compilation.
+
+**Still not complete:** this is synthetic page-table testing, not live CR3
+activation or runtime VMM validation. Page-table allocation/ownership,
+transactional updates, TLB invalidation, page-fault handling, and AArch64
+runtime validation remain open.
 
 1. Review and test x86-64 VMM page-table operations against the memory specification.
 2. Define and implement mapping, unmapping, protection, translation, and TLB invalidation invariants.
