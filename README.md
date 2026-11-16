@@ -48,6 +48,10 @@ Implementation state (Not started, In progress, Implemented, Removed) and verifi
 
 This is a draft governance baseline. Component-owned ABI and kernel specifications remain authoritative in their respective repositories.
 
+## System implementation roadmap
+
+- [Bootable CLI vertical slice roadmap 0.1](architecture/BOOTABLE_VERTICAL_SLICE_ROADMAP_0.1.md) — staged, evidence-driven implementation plan from kernel foundation to a bootable CLI system and subsequent persistent installation/update milestones.
+
 ## Cross-component specification drafts
 
 These documents coordinate contracts across repositories. They do not replace canonical component-owned specifications.
