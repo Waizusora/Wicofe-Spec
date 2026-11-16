@@ -6,6 +6,9 @@ This repository owns normative specifications that coordinate multiple Wicofe re
 - [Repository boundaries and governance](../governance/REPOSITORY_BOUNDARIES.md)
 - [Specification traceability and conformance policy 0.1](../governance/SPECIFICATION_TRACEABILITY_POLICY_0.1.md) — stable requirement IDs, separate specification/implementation/verification states, and evidence links.
 
+## System implementation roadmap
+- [Bootable CLI vertical slice roadmap 0.1](../architecture/BOOTABLE_VERTICAL_SLICE_ROADMAP_0.1.md) — evidence-driven phases from the existing kernel boot foundation through native PID 1, CLI, persistent storage, installer, and updates.
+
 ## Cross-component contracts
 - [DKM cross-component contract](../dkm/CROSS_COMPONENT_CONTRACT.md)
 - [VFS cross-component contract](../vfs/VFS_CROSS_COMPONENT_CONTRACT.md)
