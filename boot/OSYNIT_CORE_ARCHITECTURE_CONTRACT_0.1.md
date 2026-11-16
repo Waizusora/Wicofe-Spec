@@ -1,17 +1,17 @@
-# OSynit Core Architecture Contract 0.1
+# Osynit Core Architecture Contract 0.1
 
 - **Identifier:** WIC-SPEC-OSYNIT-CORE-001
 - **Status:** Accepted architecture baseline; implementation and verification remain separate
 - **Version:** 0.1
 - **Date:** 2026-11-16
 - **Canonical implementation/design:** [Waizusora/Osynit](https://github.com/Waizusora/Osynit)
-- **Related boot/service contract:** [OSynit Boot and Service Integration Contract 0.1](OSYNIT_BOOT_AND_SERVICE_CONTRACT_0.1.md)
+- **Related boot/service contract:** [Osynit Boot and Service Integration Contract 0.1](OSYNIT_BOOT_AND_SERVICE_CONTRACT_0.1.md)
 
-This document records the accepted architecture boundary for OSynit across Wicofe repositories. It does not freeze syscall numbers, wire-level IPC encoding, filesystem layout profiles, or unimplemented behavior.
+This document records the accepted architecture boundary for Osynit across Wicofe repositories. It does not freeze syscall numbers, wire-level IPC encoding, filesystem layout profiles, or unimplemented behavior.
 
 ## 1. Identity
 
-The project name is **OSynit**, expanded as **Open System Initialize**. The single executable and command prefix are `osynit`. No `osynitco` or `osynitctl` executable is defined.
+The project name is **Osynit**, expanded as **Open System Initialize**. The single executable and command prefix are `osynit`. No `osynitco` or `osynitctl` executable is defined.
 
 ## 2. Mandatory Core Init responsibilities
 
@@ -32,7 +32,7 @@ All twelve responsibilities are mandatory parts of Core Init:
 
 These are logical responsibilities, not a requirement for twelve separate processes or crates. The core must remain small, auditable, testable, and able to reach a safe state without optional extensions.
 
-## 3. Optional OSynit modules
+## 3. Optional Osynit modules
 
 The following are optional and must not be prerequisites for Core Init:
 - Mount and automount manager
@@ -48,7 +48,7 @@ Core may parse or identify extension metadata but must report unsupported/unavai
 
 ## 4. External service boundary
 
-Network, device, storage, user/login/session, time synchronization, audio, graphics, desktop, and container domain behavior belongs in external services or narrower subsystem repositories. OSynit supervises their lifecycle and dependency relationships; it does not implement their domain logic inside PID 1.
+Network, device, storage, user/login/session, time synchronization, audio, graphics, desktop, and container domain behavior belongs in external services or narrower subsystem repositories. Osynit supervises their lifecycle and dependency relationships; it does not implement their domain logic inside PID 1.
 
 ## 5. Executable and IPC model
 
@@ -61,7 +61,7 @@ There is one executable:
 
 ## 6. Core command namespace
 
-The command prefix is always `osynit`. The complete planned command surface is maintained in the [OSynit CLI Reference 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/CLI_REFERENCE_0.1.md). Planned commands are not implementation evidence. Optional command groups are registered only when their modules are available.
+The command prefix is always `osynit`. The complete planned command surface is maintained in the [Osynit CLI Reference 0.1](https://github.com/Waizusora/Osynit/blob/main/docs/CLI_REFERENCE_0.1.md). Planned commands are not implementation evidence. Optional command groups are registered only when their modules are available.
 
 ## 7. Ownership across repositories
 
@@ -77,11 +77,11 @@ The command prefix is always `osynit`. The complete planned command surface is m
 | Installation and first-boot deployment | Wicofe-Installer |
 | Whole-system architecture and project decisions | Wicofe |
 
-No repository may independently assign Wicofe syscall numbers, invent kernel-private process semantics, or fork the canonical OSynit service-unit schema.
+No repository may independently assign Wicofe syscall numbers, invent kernel-private process semantics, or fork the canonical Osynit service-unit schema.
 
 ## 8. Platform and compatibility policy
 
-Wicofe's initial CPU targets are x86-64 and AArch64. Architecture support is not proof that a kernel primitive or optional feature exists. OSynit must use the Wicofe ABI and platform capability contract rather than assuming Linux-specific pidfds, cgroups, signal flags, or reboot syscalls.
+Wicofe's initial CPU targets are x86-64 and AArch64. Architecture support is not proof that a kernel primitive or optional feature exists. Osynit must use the Wicofe ABI and platform capability contract rather than assuming Linux-specific pidfds, cgroups, signal flags, or reboot syscalls.
 
 Host tests, Android Bionic builds, and Linux musl builds do not establish native Wicofe PID 1 conformance.
 
