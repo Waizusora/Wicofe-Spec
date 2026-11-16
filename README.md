@@ -58,7 +58,7 @@ These documents coordinate contracts across repositories. They do not replace ca
 | VFS | [VFS contract](vfs/VFS_CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel filesystem spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FILESYSTEM_SPEC.md) | Draft |
 | ONWFS | [Cross-component format requirements](filesystems/ONWFS_FORMAT_PROPOSAL.md) | [ONWFS Format Design 0.2.2](https://github.com/Waizusora/ONWFS/blob/main/docs/FORMAT_DESIGN_0.2.md) and [Journal Proposal 0.1](https://github.com/Waizusora/ONWFS/blob/main/docs/JOURNAL_FORMAT_PROPOSAL_0.1.md) | Draft |
 | Boot | [Boot handoff contract](boot/BOOT_CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel boot spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/BOOT_SPEC.md) | Draft |
-| OSynit | [Core architecture contract](boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md) and [boot/service contract](boot/OSYNIT_BOOT_AND_SERVICE_CONTRACT_0.1.md) | [OSynit system specification](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) | Accepted architecture / Proposed integration |
+| Osynit | [Core architecture contract](boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md) and [boot/service contract](boot/OSYNIT_BOOT_AND_SERVICE_CONTRACT_0.1.md) | [Osynit system specification](https://github.com/Waizusora/Osynit/blob/main/docs/OSYNIT_SYSTEM_SPEC_0.1.md) | Accepted architecture / Proposed integration |
 | System interface | [System interface baseline](system-interface/SYSTEM_INTERFACE_BASELINE.md) | [Wicofe-ABI baseline](https://github.com/Waizusora/Wicofe-ABI/blob/main/SPECIFICATION_BASELINE.md) | Draft |
 
 ## Important boundary
