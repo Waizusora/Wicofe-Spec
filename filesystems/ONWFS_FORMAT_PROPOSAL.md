@@ -11,7 +11,7 @@
 
 ## 1. Purpose
 
-ONWFS means **Oh Nice WICOFE Filesystem** and is the planned native Wicofe filesystem. This document establishes cross-repository format requirements and a decision checklist. The ONWFS repository now contains a preliminary byte-layout proposal (Format Design 0.2.2) and a separate [Journal Format Proposal 0.1](https://github.com/Waizusora/ONWFS/blob/main/docs/JOURNAL_FORMAT_PROPOSAL_0.1.md). That proposal is not stable and must be reviewed and accepted by the ONWFS format owner before implementation claims compatibility.
+ONWFS means **Oh Nice WICOFE Filesystem** and is the planned native Wicofe filesystem. This document establishes cross-repository format requirements and a decision checklist. The ONWFS repository now contains a preliminary byte-layout proposal (Format Design 0.2.2) and a separate [Journal Format Proposal 0.1](https://github.com/Waizusora/ONWFS/blob/main/docs/JOURNAL_FORMAT_PROPOSAL_0.1.md), with its [adversarial audit](https://github.com/Waizusora/ONWFS/blob/main/docs/JOURNAL_ADVERSARIAL_AUDIT_0.1.md). That proposal is not stable and must be reviewed and accepted by the ONWFS format owner before implementation claims compatibility.
 
 The kernel's [filesystem specification](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FILESYSTEM_SPEC.md) remains the canonical architecture reference. The [VFS cross-component contract](../vfs/VFS_CROSS_COMPONENT_CONTRACT.md) defines integration responsibilities.
 
