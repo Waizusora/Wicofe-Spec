@@ -92,6 +92,6 @@ Until Format Design 0.2.2 and its journal proposal are reviewed, unresolved layo
 
 ## 8. Conformance plan
 
-Wicofe-Tests should eventually include golden byte-level images, malformed-image fuzzing, boundary and overflow tests, interrupted-write/replay tests, cross-version mount tests, and independent checker validation. Test vectors must be versioned with the format.
+Wicofe-Tests should eventually include golden byte-level images, malformed-image fuzzing, boundary and overflow tests, interrupted-write/replay tests, control-state loss after a durable commit, ring-wrap enumeration, repeated recovery, deferred-free/reallocation protection against stale redo images, cross-version mount tests, and independent checker validation. Test vectors must be versioned with the format and tied to the exact journal proposal revision.
 
 **Status remains Draft. The canonical preliminary layout is maintained in the ONWFS repository; this cross-component document does not supersede it.**
