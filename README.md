@@ -54,3 +54,20 @@ Original Wicofe specifications are intended to use MPL-2.0. Referenced external 
 - [Repository boundaries and specification governance](governance/REPOSITORY_BOUNDARIES.md)
 
 This is a draft governance baseline. Component-owned ABI and kernel specifications remain authoritative in their respective repositories.
+
+## Cross-component specification drafts
+
+These documents coordinate contracts across repositories. They do not replace canonical component-owned specifications.
+
+| Area | Cross-component document | Canonical authority | Status |
+|---|---|---|---|
+| DKM | [DKM contract](dkm/CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel DKM spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/DKM_SPEC.md) | Draft |
+| VFS | [VFS contract](vfs/VFS_CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel filesystem spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FILESYSTEM_SPEC.md) | Draft |
+| ONWFS | [On-disk format proposal](filesystems/ONWFS_FORMAT_PROPOSAL.md) | ONWFS format owner; format decisions still open | Draft |
+| Boot | [Boot handoff contract](boot/BOOT_CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel boot spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/BOOT_SPEC.md) | Draft |
+| System interface | [System interface baseline](system-interface/SYSTEM_INTERFACE_BASELINE.md) | [Wicofe-ABI baseline](https://github.com/Waizusora/Wicofe-ABI/blob/main/SPECIFICATION_BASELINE.md) | Draft |
+
+## Important boundary
+
+DKM ABI is a privileged kernel/module contract. The userspace syscall ABI is a separate contract owned by Wicofe-ABI. VFS internals and boot handoff implementation remain owned by Wicofe-Kernel. ONWFS disk layout is not finalized by the current proposal.
+
