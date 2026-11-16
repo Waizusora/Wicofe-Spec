@@ -71,3 +71,6 @@ These documents coordinate contracts across repositories. They do not replace ca
 
 DKM ABI is a privileged kernel/module contract. The userspace syscall ABI is a separate contract owned by Wicofe-ABI. VFS internals and boot handoff implementation remain owned by Wicofe-Kernel. ONWFS disk layout is proposed in ONWFS Format Design 0.2 but is not accepted or stable.
 
+## Documentation
+
+See [docs/INDEX.md](docs/INDEX.md) for this repository's technical documentation. The [central repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md) identifies canonical ownership and cross-repository boundaries.
