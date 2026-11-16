@@ -1,7 +1,7 @@
 # ONWFS On-Disk Format Proposal
 
 - **Identifier:** WIC-SPEC-ONWFS-FORMAT-001
-- **Version:** 0.2.1
+- **Version:** 0.2.2
 - **Status:** Draft — cross-repository requirements and review checklist
 - **Canonical design document:** [ONWFS Format Design 0.2](https://github.com/Waizusora/ONWFS/blob/main/docs/FORMAT_DESIGN_0.2.md)
 - **Format owner:** ONWFS
@@ -11,7 +11,7 @@
 
 ## 1. Purpose
 
-ONWFS means **Oh Nice WICOFE Filesystem** and is the planned native Wicofe filesystem. This document establishes cross-repository format requirements and a decision checklist. The ONWFS repository now contains a preliminary byte-layout proposal (Format Design 0.2.1). That proposal is not stable and must be reviewed and accepted by the ONWFS format owner before implementation claims compatibility.
+ONWFS means **Oh Nice WICOFE Filesystem** and is the planned native Wicofe filesystem. This document establishes cross-repository format requirements and a decision checklist. The ONWFS repository now contains a preliminary byte-layout proposal (Format Design 0.2.2) and a separate [Journal Format Proposal 0.1](https://github.com/Waizusora/ONWFS/blob/main/docs/JOURNAL_FORMAT_PROPOSAL_0.1.md). That proposal is not stable and must be reviewed and accepted by the ONWFS format owner before implementation claims compatibility.
 
 The kernel's [filesystem specification](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FILESYSTEM_SPEC.md) remains the canonical architecture reference. The [VFS cross-component contract](../vfs/VFS_CROSS_COMPONENT_CONTRACT.md) defines integration responsibilities.
 
@@ -88,7 +88,7 @@ The ONWFS owner must publish an accepted format decision covering at minimum:
 - Maximum limits and name semantics.
 - Initial read-only/read-write implementation scope.
 
-Until Format Design 0.2.1 is reviewed, unresolved layout decisions are closed, and a version 1 format is accepted, no on-disk layout is stable and no formatter should create media advertised as forward-compatible ONWFS.
+Until Format Design 0.2.2 and its journal proposal are reviewed, unresolved layout decisions are closed, and a version 1 format is accepted, no on-disk layout is stable and no formatter should create media advertised as forward-compatible ONWFS.
 
 ## 8. Conformance plan
 
