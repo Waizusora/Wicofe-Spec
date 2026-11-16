@@ -11,6 +11,8 @@ This repository owns normative specifications that coordinate multiple Wicofe re
 - [VFS cross-component contract](../vfs/VFS_CROSS_COMPONENT_CONTRACT.md)
 - [ONWFS cross-component requirements](../filesystems/ONWFS_FORMAT_PROPOSAL.md)
 - [Boot handoff contract](../boot/BOOT_CROSS_COMPONENT_CONTRACT.md)
+- [OSynit core architecture contract 0.1](../boot/OSYNIT_CORE_ARCHITECTURE_CONTRACT_0.1.md) — accepted Core Init boundary, optional modules, executable model and repository ownership.
+- [OSynit boot and service integration contract 0.1](../boot/OSYNIT_BOOT_AND_SERVICE_CONTRACT_0.1.md) — proposed cross-component boot/service details.
 - [System interface baseline](../system-interface/SYSTEM_INTERFACE_BASELINE.md)
 
 ## Ownership rules
