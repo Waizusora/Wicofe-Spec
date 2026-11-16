@@ -51,7 +51,7 @@ Each requirement record must state:
 
 Use normative terms such as MUST, MUST NOT, SHOULD and MAY consistently. A MUST requirement needs objective, observable acceptance criteria.
 
-## 4. Specification metadata
+## 4. Specification metadata and lifecycle
 
 Each specification should include:
 - stable identifier, title and version;
@@ -65,9 +65,14 @@ Each specification should include:
 - implementation/test links, or an explicit statement that they are not yet available;
 - references to superseding or related specifications.
 
-The primary statuses defined by repository governance remain: Draft, Proposed, Accepted, Implemented, Deprecated and Superseded.
+The specification lifecycle has exactly one primary status:
+- **Draft:** incomplete working material; not binding.
+- **Proposed:** ready for technical review; not binding.
+- **Accepted:** approved design; implementation is not implied.
+- **Deprecated:** retained for migration; new use is discouraged.
+- **Superseded:** replaced by a named newer specification.
 
-Do not add ambiguous status labels such as "production-ready" as a substitute for the defined lifecycle. If useful, readiness may be recorded separately with objective evidence.
+**Implemented is not a specification lifecycle status.** Record implementation state independently. A specification may remain Accepted while one or more implementations are in progress or complete.
 
 ## 5. Separate design, implementation and verification state
 
