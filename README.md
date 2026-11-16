@@ -11,7 +11,7 @@ This repository is the cross-project source of truth for specifications that def
 - Dynamic Kernel Module (DKM) interface requirements.
 - Filesystem and storage format specifications where ownership is cross-component.
 - Boot, image, package, service, and interoperability contracts.
-- Specification versioning, status, and compatibility policy.
+- Specification versioning, status, compatibility and traceability policy.
 
 ## Ownership boundaries
 
@@ -28,7 +28,7 @@ Every specification must state:
 - Security considerations and conformance criteria.
 - References to implementation and test coverage, when available.
 
-Changes to accepted specifications require review and a documented compatibility impact. A specification marked Accepted does not imply implementation.
+A specification marked Accepted does not imply implementation. Implementation status and verification evidence must be tracked independently.
 
 ## Suggested structure
 
@@ -41,17 +41,10 @@ Changes to accepted specifications require review and a documented compatibility
 - `process/`
 - `governance/`
 
-## Status
-
-Initial repository baseline. No cross-component specification is declared stable solely by the existence of this repository.
-
-## License
-
-Original Wicofe specifications are intended to use MPL-2.0. Referenced external standards retain their own terms and attribution.
-
 ## Governance
 
 - [Repository boundaries and specification governance](governance/REPOSITORY_BOUNDARIES.md)
+- [Specification traceability and conformance policy](governance/SPECIFICATION_TRACEABILITY_POLICY_0.1.md)
 
 This is a draft governance baseline. Component-owned ABI and kernel specifications remain authoritative in their respective repositories.
 
