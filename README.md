@@ -17,18 +17,18 @@ This repository is the cross-project source of truth for specifications that def
 
 A specification owned by a component remains authoritative in that component repository. Wicofe-Specs hosts cross-component specifications and indexes canonical specifications; it must not create competing definitions for Wicofe-ABI or Wicofe-Kernel interfaces.
 
-## Specification lifecycle
+## Specification lifecycle and evidence
 
 Every specification must state:
 
 - Unique identifier and title.
-- Status: Draft, Proposed, Accepted, Implemented, Deprecated, or Superseded.
+- Lifecycle status: Draft, Proposed, Accepted, Deprecated, or Superseded.
 - Version and last-updated date.
 - Scope, terminology, requirements, and compatibility rules.
 - Security considerations and conformance criteria.
 - References to implementation and test coverage, when available.
 
-A specification marked Accepted does not imply implementation. Implementation status and verification evidence must be tracked independently.
+Implementation state (Not started, In progress, Implemented, Removed) and verification state (Not run, Blocked, Failed, Passed) are recorded separately. An Accepted specification does not imply implementation, and an implemented feature is not necessarily verified.
 
 ## Suggested structure
 
