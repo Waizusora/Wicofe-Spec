@@ -3,7 +3,7 @@
 - **Identifier:** WIC-SPEC-ONWFS-FORMAT-001
 - **Version:** 0.2.2
 - **Status:** Draft — cross-repository requirements and review checklist
-- **Canonical design document:** [ONWFS Format Design 0.2](https://github.com/Waizusora/ONWFS/blob/main/docs/FORMAT_DESIGN_0.2.md)
+- **Canonical design document:** [ONWFS Format Design 0.2.2](https://github.com/Waizusora/ONWFS/blob/main/docs/FORMAT_DESIGN_0.2.md)
 - **Format owner:** ONWFS
 - **Kernel integration owner:** Wicofe-Kernel
 - **Coordination:** Wicofe-Specs
