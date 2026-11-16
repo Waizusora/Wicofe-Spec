@@ -48,3 +48,9 @@ Initial repository baseline. No cross-component specification is declared stable
 ## License
 
 Original Wicofe specifications are intended to use MPL-2.0. Referenced external standards retain their own terms and attribution.
+
+## Governance
+
+- [Repository boundaries and specification governance](governance/REPOSITORY_BOUNDARIES.md)
+
+This is a draft governance baseline. Component-owned ABI and kernel specifications remain authoritative in their respective repositories.
