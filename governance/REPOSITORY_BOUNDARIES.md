@@ -11,25 +11,26 @@ This document defines where authoritative contracts live and how changes that af
 
 - Wicofe-ABI owns userspace syscall identifiers, calling conventions, shared data layouts, and ABI compatibility policy.
 - Wicofe-Kernel owns kernel mechanisms, VFS implementation, driver core, and the privileged DKM ABI.
-- ONWFS owns its on-disk format and filesystem-specific implementation.
+- ONWFS owns its on-disk format and filesystem-specific implementation; Wicofe-Storage owns system-level storage workflows.
 - Each component repository owns its implementation details and component-local tests.
 - Wicofe-Specs owns cross-component specifications and indexes authoritative specifications; it must not fork or redefine component-owned contracts.
 - Wicofe-Tests owns cross-repository conformance and integration tests.
 - Wicofe-Docs owns explanatory user, administrator, and developer documentation.
 - Wicofe-ThirdParty owns third-party provenance, license review records, and patch tracking.
 
-## 3. Specification status
+## 3. Specification lifecycle and implementation state
 
-Use exactly one primary status:
+Use exactly one primary specification lifecycle status:
 
 - **Draft:** under active design; may change without compatibility guarantees.
 - **Proposed:** ready for review; not yet accepted.
 - **Accepted:** approved design; implementation is not implied.
-- **Implemented:** implementation exists; this status alone does not mean tests pass.
 - **Deprecated:** retained for migration; new use is discouraged.
 - **Superseded:** replaced by a named newer specification.
 
-A specification must also record its version, owner, reviewers, date, references, security considerations, and conformance criteria.
+Implementation state is tracked separately as **Not started**, **In progress**, **Implemented**, or **Removed**. Verification state is separate again: **Not run**, **Blocked**, **Failed**, or **Passed**.
+
+A specification must also record its version, owner, reviewers, date, references, security considerations, and conformance criteria. Do not use Implemented as a specification lifecycle status.
 
 ## 4. Change process
 
