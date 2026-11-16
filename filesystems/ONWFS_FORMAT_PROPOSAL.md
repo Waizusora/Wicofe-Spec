@@ -1,8 +1,9 @@
 # ONWFS On-Disk Format Proposal
 
 - **Identifier:** WIC-SPEC-ONWFS-FORMAT-001
-- **Version:** 0.1.0
-- **Status:** Draft — design requirements only
+- **Version:** 0.2.0
+- **Status:** Draft — cross-repository requirements and review checklist
+- **Canonical design document:** [ONWFS Format Design 0.2](https://github.com/Waizusora/ONWFS/blob/main/docs/FORMAT_DESIGN_0.2.md)
 - **Format owner:** ONWFS
 - **Kernel integration owner:** Wicofe-Kernel
 - **Coordination:** Wicofe-Specs
@@ -10,7 +11,7 @@
 
 ## 1. Purpose
 
-ONWFS means **Oh Nice WICOFE Filesystem** and is the planned native Wicofe filesystem. This document establishes format requirements and a decision checklist. It deliberately does not assign byte offsets, magic values, structure sizes, checksum algorithms, or journal layouts. Those choices require a dedicated format review before an implementation can safely write disks.
+ONWFS means **Oh Nice WICOFE Filesystem** and is the planned native Wicofe filesystem. This document establishes cross-repository format requirements and a decision checklist. The ONWFS repository now contains a preliminary byte-layout proposal (Format Design 0.2). That proposal is not stable and must be reviewed and accepted by the ONWFS format owner before implementation claims compatibility.
 
 The kernel's [filesystem specification](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FILESYSTEM_SPEC.md) remains the canonical architecture reference. The [VFS cross-component contract](../vfs/VFS_CROSS_COMPONENT_CONTRACT.md) defines integration responsibilities.
 
@@ -87,10 +88,10 @@ The ONWFS owner must publish an accepted format decision covering at minimum:
 - Maximum limits and name semantics.
 - Initial read-only/read-write implementation scope.
 
-Until that decision is accepted, no on-disk layout is stable and no formatter should create media advertised as forward-compatible ONWFS.
+Until Format Design 0.2 is reviewed, unresolved layout decisions are closed, and a version 1 format is accepted, no on-disk layout is stable and no formatter should create media advertised as forward-compatible ONWFS.
 
 ## 8. Conformance plan
 
 Wicofe-Tests should eventually include golden byte-level images, malformed-image fuzzing, boundary and overflow tests, interrupted-write/replay tests, cross-version mount tests, and independent checker validation. Test vectors must be versioned with the format.
 
-**Status remains Draft. This is not a finalized ONWFS format specification.**
+**Status remains Draft. The canonical preliminary layout is maintained in the ONWFS repository; this cross-component document does not supersede it.**
