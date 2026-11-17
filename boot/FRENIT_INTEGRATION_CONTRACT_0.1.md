@@ -7,7 +7,7 @@
 - **Canonical implementation:** [Waizusora/Frenit](https://github.com/Waizusora/Frenit)
 - **Owners:** Frenit (init implementation), Wicofe-Kernel (kernel mechanisms), Wicofe-ABI (public userspace ABI), Wicofe-Specs (cross-component contract), Wicofe-Tests (conformance)
 
-This document establishes only the repository ownership and currently evidenced integration boundary. It does not import prior Osynit design decisions and does not define syscall numbers, data layouts, IPC wire formats, or unsupported kernel behavior.
+This document establishes only the repository ownership and currently evidenced integration boundary. It does not inherit any prior init-system proposal and does not define syscall numbers, data layouts, IPC wire formats, or unsupported kernel behavior.
 
 ## 1. Canonical identity
 
@@ -54,7 +54,7 @@ Each gate must identify its owning ABI/kernel specification and a reproducible t
 
 ## 5. Compatibility and exclusions
 
-- Do not reuse Osynit-specific executable names, socket paths, unit schemas, command interfaces, or implementation code.
+- Do not reuse proposal-specific executable names, socket paths, unit schemas, command interfaces, or implementation code.
 - Do not assume Linux syscall numbers or Linux binary ABI compatibility.
 - Do not enable a Frenit PID 1 boot path while any mandatory kernel/ABI integration gate remains undefined or unverified.
 - Keep unsupported operations explicit; never report an unimplemented privileged operation as successful.
