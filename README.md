@@ -56,6 +56,8 @@ This is a draft governance baseline. Component-owned ABI and kernel specificatio
 
 ## Cross-component specification drafts
 
+The [Native Wicofe Rust Utilities Porting Requirements 0.1](userspace/WUTILS_NATIVE_PORTING_REQUIREMENTS_0.1.md) defines the native Wutils direction: Wicofe Rust target and platform runtime, no Linux libc backend, no GNU compatibility requirement, and POSIX utility behavior.
+
 These documents coordinate contracts across repositories. They do not replace canonical component-owned specifications.
 
 | Area | Cross-component document | Canonical authority | Status |
