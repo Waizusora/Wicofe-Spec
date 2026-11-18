@@ -109,7 +109,7 @@ The hierarchy is a policy convention, not a requirement that every directory res
 
 ## 4. POSIX C runtime: Wlibc
 
-**Wlibc (Wicofe C Library)** is the official C library and POSIX runtime project for Wicofe. Its implementation plan is to fork musl and port the required runtime to the native Wicofe syscall ABI, subject to source, license, and provenance review.
+**Wlibc (Wicofe C Library)** is the official C library and POSIX runtime project for Wicofe. Its implementation plan is to fork musl and port the required runtime to the native Wicofe syscall ABI, using the musl 1.2.6 snapshot commit `7813e9119eb5fe681b6750b8a033a0490bca0941`, pinned in Wlibc's `upstream/musl.lock`; source import and detailed component audit remain pending.
 
 Wlibc is not a Linux syscall compatibility shim. Upstream Linux-specific syscall code, process assumptions, startup behavior, threading integration, and loader assumptions must be replaced or adapted to documented Wicofe contracts. Original Wlibc-authored work uses MIT under an explicit repository-specific project license exception. Imported musl source retains its upstream copyright and license notices; bundled components retain their own applicable terms. The exact upstream revision and component-level provenance audit are required before import.
 
@@ -122,7 +122,7 @@ Wlibc is not a Linux syscall compatibility shim. Upstream Linux-specific syscall
 - Additional POSIX interfaces may be implemented in a separate Wicofe POSIX layer when appropriate. Such a layer must use the same public headers, ABI rules, error semantics, and conformance tests and must not create a competing API contract.
 - Publish a per-interface conformance matrix showing implemented, partially implemented, unsupported, and verified behavior.
 
-The exact POSIX edition and any permitted optional-feature profile must be explicitly selected before claiming conformance. A partial implementation must be described as partial.
+The selected target is ISO C17 and IEEE Std 1003.1-2024 (POSIX.1-2024 / The Open Group Base Specifications Issue 8). Wlibc owns the C runtime and System Interfaces C API; Mysh and system utility repositories own the Shell and Utilities portions. The implementation must maintain an interface/option matrix and test evidence. A partial implementation must be described as partial.
 
 ### 4.2 Component boundaries
 
