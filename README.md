@@ -11,7 +11,7 @@ This repository is the cross-project source of truth for specifications that def
 - Dynamic Kernel Module (DKM) interface requirements.
 - Filesystem and storage format specifications where ownership is cross-component.
 - Boot, image, package, service, and interoperability contracts.
-- Unix userspace foundation: traditional WFH directory layout, Wlibc POSIX runtime requirements, and timezone database/runtime boundaries.
+- Unix userspace foundation: traditional WFH directory layout, Wlibc ISO C17/POSIX.1-2024 runtime requirements, and timezone database/runtime boundaries.
 - Specification versioning, status, compatibility and traceability policy.
 
 ## Ownership boundaries
