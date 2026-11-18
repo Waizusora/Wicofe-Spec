@@ -11,6 +11,7 @@ This repository is the cross-project source of truth for specifications that def
 - Dynamic Kernel Module (DKM) interface requirements.
 - Filesystem and storage format specifications where ownership is cross-component.
 - Boot, image, package, service, and interoperability contracts.
+- Unix userspace foundation: traditional WFH directory layout, Wlibc POSIX runtime requirements, and timezone database/runtime boundaries.
 - Specification versioning, status, compatibility and traceability policy.
 
 ## Ownership boundaries
@@ -39,6 +40,7 @@ Implementation state (Not started, In progress, Implemented, Removed) and verifi
 - `filesystems/`
 - `formats/`
 - `process/`
+- `userspace/`
 - `governance/`
 
 ## Governance
@@ -58,6 +60,7 @@ These documents coordinate contracts across repositories. They do not replace ca
 
 | Area | Cross-component document | Canonical authority | Status |
 |---|---|---|---|
+| Unix userspace | [Unix userspace foundation 0.1](userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) | [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI), [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel), [Wlibc](https://github.com/Waizusora/Wicofe-Libc) | Proposed |
 | DKM | [DKM contract](dkm/CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel DKM spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/DKM_SPEC.md) | Draft |
 | VFS | [VFS contract](vfs/VFS_CROSS_COMPONENT_CONTRACT.md) | [Wicofe-Kernel filesystem spec](https://github.com/Waizusora/Wicofe-Kernel/blob/main/docs/FILESYSTEM_SPEC.md) | Draft |
 | ONWFS | [Cross-component format requirements](filesystems/ONWFS_FORMAT_PROPOSAL.md) | [ONWFS Format Design 0.2.2](https://github.com/Waizusora/ONWFS/blob/main/docs/FORMAT_DESIGN_0.2.md) and [Journal Proposal 0.1](https://github.com/Waizusora/ONWFS/blob/main/docs/JOURNAL_FORMAT_PROPOSAL_0.1.md) | Draft |
