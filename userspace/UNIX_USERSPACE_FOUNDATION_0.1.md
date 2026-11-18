@@ -111,7 +111,7 @@ The hierarchy is a policy convention, not a requirement that every directory res
 
 **Wlibc (Wicofe C Library)** is the official C library and POSIX runtime project for Wicofe. Its implementation plan is to fork musl and port the required runtime to the native Wicofe syscall ABI, subject to source, license, and provenance review.
 
-Wlibc is not a Linux syscall compatibility shim. Upstream Linux-specific syscall code, process assumptions, startup behavior, threading integration, and loader assumptions must be replaced or adapted to documented Wicofe contracts.
+Wlibc is not a Linux syscall compatibility shim. Upstream Linux-specific syscall code, process assumptions, startup behavior, threading integration, and loader assumptions must be replaced or adapted to documented Wicofe contracts. Original Wlibc-authored work uses MIT under an explicit repository-specific project license exception. Imported musl source retains its upstream copyright and license notices; bundled components retain their own applicable terms. The exact upstream revision and component-level provenance audit are required before import.
 
 ### 4.1 Conformance target
 
