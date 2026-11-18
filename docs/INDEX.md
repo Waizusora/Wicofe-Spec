@@ -10,6 +10,7 @@ This repository owns normative specifications that coordinate multiple Wicofe re
 - [Bootable CLI vertical slice roadmap 0.1](../architecture/BOOTABLE_VERTICAL_SLICE_ROADMAP_0.1.md) — evidence-driven phases from the existing kernel boot foundation through native PID 1, CLI, persistent storage, installer, and updates.
 
 ## Cross-component contracts
+- [Unix userspace foundation 0.1](../userspace/UNIX_USERSPACE_FOUNDATION_0.1.md) — proposed traditional Unix filesystem hierarchy (WFH), Wlibc POSIX scope, native syscall boundary, and IANA TZif timezone runtime.
 - [DKM cross-component contract](../dkm/CROSS_COMPONENT_CONTRACT.md)
 - [VFS cross-component contract](../vfs/VFS_CROSS_COMPONENT_CONTRACT.md)
 - [ONWFS cross-component requirements](../filesystems/ONWFS_FORMAT_PROPOSAL.md)
@@ -20,6 +21,7 @@ This repository owns normative specifications that coordinate multiple Wicofe re
 ## Ownership rules
 - [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI) owns public userspace syscall ABI definitions.
 - [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel) owns kernel mechanisms, VFS internals, boot implementation, and DKM ABI.
+- [Wlibc](https://github.com/Waizusora/Wicofe-Libc) owns the C runtime and POSIX C interfaces.
 - [ONWFS](https://github.com/Waizusora/ONWFS) owns ONWFS disk layout.
 - This repository owns cross-repository requirements and coordination; it must not create competing component specifications.
 
