@@ -28,5 +28,5 @@ This repository owns normative specifications that coordinate multiple Wicofe re
 ## Lifecycle
 Every specification states identifier, version, status, scope, compatibility, security, conformance, and implementation references. Accepted does not mean implemented. Drafts do not freeze compatibility. Specification lifecycle, implementation state, verification state and release support must be tracked separately.
 
-- [Central Wicofe documentation index](https://github.com/Waizusora/Wicofe-Docs/blob/main/INDEX.md)
-- [Repository documentation map](https://github.com/Waizusora/Wicofe-Docs/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
+- [Central Wicofe documentation index](https://github.com/Waizusora/Wicofe-Doc/blob/main/INDEX.md)
+- [Repository documentation map](https://github.com/Waizusora/Wicofe-Doc/blob/main/REPOSITORY_DOCUMENTATION_MAP.md)
