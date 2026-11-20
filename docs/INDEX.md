@@ -21,7 +21,7 @@ This repository owns normative specifications that coordinate multiple Wicofe re
 ## Ownership rules
 - [Wicofe-ABI](https://github.com/Waizusora/Wicofe-ABI) owns public userspace syscall ABI definitions.
 - [Wicofe-Kernel](https://github.com/Waizusora/Wicofe-Kernel) owns kernel mechanisms, VFS internals, boot implementation, and DKM ABI.
-- [Wlibc](https://github.com/Waizusora/Wicofe-Libc) owns the C runtime and POSIX C interfaces.
+- [Wlibc](https://github.com/Waizusora/WLibc) owns the C runtime and POSIX C interfaces.
 - [ONWFS](https://github.com/Waizusora/ONWFS) owns ONWFS disk layout.
 - This repository owns cross-repository requirements and coordination; it must not create competing component specifications.
 
