@@ -3,7 +3,7 @@
 - **Identifier:** WIC-SPEC-USERSPACE-WUTILS-001
 - **Status:** Proposed
 - **Version:** 0.1
-- **Owner:** Wicofe-Specs
+- **Owner:** Wicofe-Spec
 - **Implementation status:** Not started
 - **Verification status:** Not run
 
@@ -101,11 +101,11 @@ The Wutils native port may be declared operational only when:
 - **Wlibc:** separate C standard library and POSIX C runtime; not a mandatory Wutils dependency.
 - **Wutils:** command-line utility implementations and POSIX utility behavior.
 - **Wicofe-SDK / Wicofe-Build:** target toolchain, sysroot, reproducible builds, and CI orchestration.
-- **Wicofe-Tests:** cross-component and POSIX conformance tests.
+- **Wicofe-Test:** cross-component and POSIX conformance tests.
 
 ## 10. References
 
-- [Wicofe Project Principles](https://github.com/Waizusora/Wicofe-Docs/blob/main/PROJECT_PRINCIPLES.md)
+- [Wicofe Project Principles](https://github.com/Waizusora/Wicofe-Doc/blob/main/PROJECT_PRINCIPLES.md)
 - [Wicofe ABI](https://github.com/Waizusora/Wicofe-ABI)
 - [Wicofe Kernel](https://github.com/Waizusora/Wicofe-Kernel)
 - [Wicofe Third-Party Dependency License Policy](https://github.com/Waizusora/Wicofe-ThirdParty/blob/main/policies/DEPENDENCY_LICENSE_POLICY_0.2.md)
